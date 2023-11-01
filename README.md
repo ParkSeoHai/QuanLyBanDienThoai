@@ -3,7 +3,7 @@
 
 - Database: Oracle.
 - Chức năng:
-  - Quản lý nhà cung cấp
+  <a href="#!">- Quản lý nhà cung cấp</a>
   - Quản lý sản phẩm
   - Quản lý nhập xuất hàng hóa
   - Thống kê báo cáo
