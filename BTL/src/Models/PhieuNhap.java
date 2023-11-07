@@ -18,37 +18,25 @@ public class PhieuNhap {
     public int getMaPN() {
         return maPN;
     }
-
     public void setMaPN(int maPN) {
         this.maPN = maPN;
     }
-
     public String getNgayNhap() {
         return ngayNhap;
     }
-
     public void setNgayNhap(String ngayNhap) {
         this.ngayNhap = ngayNhap;
     }
-
     public int getMaNCC() {
         return maNCC;
     }
-
     public void setMaNCC(int maNCC) {
         this.maNCC = maNCC;
     }
-    
     public PhieuNhap() {}
-
     public PhieuNhap(int maPN, String ngayNhap, int maNCC) {
         this.maPN = maPN;
         this.ngayNhap = ngayNhap;
         this.maNCC = maNCC;
-    }
-
-    @Override
-    public String toString() {
-        return "PhieuNhap{" + "maPN=" + maPN + ", ngayNhap=" + ngayNhap + ", maNCC=" + maNCC + '}';
     }
 }

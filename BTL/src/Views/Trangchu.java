@@ -83,6 +83,14 @@ public class Trangchu extends javax.swing.JFrame {
     private void loadForm() throws SQLException, ClassNotFoundException, IOException {
         controlTC = new TrangChuController();
         
+        // Set color button
+        btnHome.setBackground(Color.WHITE);
+        btnQLNCC.setBackground(Color.WHITE);
+        btnQLSP.setBackground(Color.WHITE);
+        cbQLNX.setBackground(Color.WHITE);
+        cbThongKe.setBackground(Color.WHITE);
+        
+        
         // Hiển thị panel Trang chủ
         panelTrangChu.setVisible(true);
         panelNhapHang.setVisible(false);

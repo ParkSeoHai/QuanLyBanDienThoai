@@ -13,11 +13,6 @@ import java.sql.PreparedStatement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
-/**
- *
- * @author anhha
- */
 public class DangNhapController extends DBConnect implements IDangNhap {
     private final java.sql.Connection conn;
     
@@ -43,7 +38,6 @@ public class DangNhapController extends DBConnect implements IDangNhap {
         } catch (IOException ex) { 
             Logger.getLogger(DangNhapController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
         // Close connect
         try {
             closeConnect(conn);

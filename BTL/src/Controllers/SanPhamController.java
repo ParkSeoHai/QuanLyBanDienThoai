@@ -30,6 +30,7 @@ public class SanPhamController extends DBConnect implements ISanPham {
         try {
             String query = "Insert into SanPham(TenSp, DvTinh, GiaBan, MauSac, KichThuocManHinh, Ram, BoNho, Pin, HeDieuHanh, SoLuongHang) "
                     + "values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setString(1, sp.getTenSP());
             ps.setString(2, sp.getDvTinh());
@@ -81,7 +82,6 @@ public class SanPhamController extends DBConnect implements ISanPham {
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setInt(1, maSP);
             return ps.executeUpdate() > 0;
-            
         } catch (SQLException ex) {
             Logger.getLogger(SanPhamController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -97,7 +97,7 @@ public class SanPhamController extends DBConnect implements ISanPham {
         ps.setDouble(3, sp.getGiaBan());
         
         var rs = ps.executeQuery();
-        if(rs.next()) 
+        if(rs.next())
             return rs.getInt(1);
         return 0;
     }
